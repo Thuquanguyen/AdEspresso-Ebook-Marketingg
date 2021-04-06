@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="eBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="bookView" destination="n4y-Dd-3OG" id="VCa-Sg-g1E"/>
+                <outlet property="heightOfTbv" destination="Kfz-95-3n7" id="8zl-Qf-oXP"/>
+                <outlet property="newBookCollectionView" destination="gnQ-Oz-CN5" id="RUp-xH-8WV"/>
+                <outlet property="newBookTableView" destination="msz-5a-jgC" id="CjL-9U-rtp"/>
+                <outlet property="scrollView" destination="Xmd-WX-ENO" id="hpw-FQ-DyY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmd-WX-ENO">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-Dd-3OG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="518"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HN-t1-p7F">
+                                    <rect key="frame" x="16" y="20" width="382" height="24"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-Oz-CN5">
+                                    <rect key="frame" x="16" y="54" width="398" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="uKg-px-R4v"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9pj-cL-lh8">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="IwL-Wu-25R"/>
+                                        <outlet property="delegate" destination="-1" id="Z5U-Ku-X5g"/>
+                                    </connections>
+                                </collectionView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="msz-5a-jgC">
+                                    <rect key="frame" x="16" y="308" width="382" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="Kfz-95-3n7"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="pJ1-CO-PKs"/>
+                                        <outlet property="delegate" destination="-1" id="bVq-tK-NaM"/>
+                                    </connections>
+                                </tableView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdF-9v-ngo">
+                                    <rect key="frame" x="16" y="274" width="72.5" height="24"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKf-mB-ICa">
+                                    <rect key="frame" x="340" y="269.5" width="58" height="33"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" title="More &gt;">
+                                        <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapAll:" destination="-1" eventType="touchUpInside" id="Ai7-nE-uQD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="1HN-t1-p7F" secondAttribute="trailing" constant="16" id="2y4-dT-l56"/>
+                                <constraint firstAttribute="trailing" secondItem="msz-5a-jgC" secondAttribute="trailing" constant="16" id="7Mm-sy-XDD"/>
+                                <constraint firstItem="AKf-mB-ICa" firstAttribute="centerY" secondItem="fdF-9v-ngo" secondAttribute="centerY" id="7b5-oD-srk"/>
+                                <constraint firstAttribute="trailing" secondItem="AKf-mB-ICa" secondAttribute="trailing" constant="16" id="AKv-JK-hsM"/>
+                                <constraint firstItem="gnQ-Oz-CN5" firstAttribute="leading" secondItem="n4y-Dd-3OG" secondAttribute="leading" constant="16" id="QQz-Xv-ubS"/>
+                                <constraint firstItem="1HN-t1-p7F" firstAttribute="leading" secondItem="n4y-Dd-3OG" secondAttribute="leading" constant="16" id="SyY-Jj-DIe"/>
+                                <constraint firstItem="msz-5a-jgC" firstAttribute="top" secondItem="fdF-9v-ngo" secondAttribute="bottom" constant="10" id="URk-OM-HsD"/>
+                                <constraint firstItem="msz-5a-jgC" firstAttribute="leading" secondItem="n4y-Dd-3OG" secondAttribute="leading" constant="16" id="Vc8-FN-99S"/>
+                                <constraint firstItem="gnQ-Oz-CN5" firstAttribute="top" secondItem="1HN-t1-p7F" secondAttribute="bottom" constant="10" id="Xod-7H-TJf"/>
+                                <constraint firstItem="fdF-9v-ngo" firstAttribute="leading" secondItem="n4y-Dd-3OG" secondAttribute="leading" constant="16" id="Ze1-cY-wBQ"/>
+                                <constraint firstItem="fdF-9v-ngo" firstAttribute="top" secondItem="gnQ-Oz-CN5" secondAttribute="bottom" constant="20" id="aoy-Ax-stC"/>
+                                <constraint firstAttribute="trailing" secondItem="gnQ-Oz-CN5" secondAttribute="trailing" id="eAH-TH-eML"/>
+                                <constraint firstItem="1HN-t1-p7F" firstAttribute="top" secondItem="n4y-Dd-3OG" secondAttribute="top" constant="20" id="gKV-B2-G1b"/>
+                                <constraint firstAttribute="bottom" secondItem="msz-5a-jgC" secondAttribute="bottom" constant="10" id="oT0-43-WNS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="n4y-Dd-3OG" firstAttribute="top" secondItem="Xmd-WX-ENO" secondAttribute="top" id="ILL-bZ-ndV"/>
+                        <constraint firstAttribute="trailing" secondItem="n4y-Dd-3OG" secondAttribute="trailing" id="Yef-m3-qtv"/>
+                        <constraint firstItem="n4y-Dd-3OG" firstAttribute="width" secondItem="Xmd-WX-ENO" secondAttribute="width" id="ij0-6K-zw0"/>
+                        <constraint firstItem="n4y-Dd-3OG" firstAttribute="leading" secondItem="Xmd-WX-ENO" secondAttribute="leading" id="xOY-Db-3nX"/>
+                        <constraint firstAttribute="bottom" secondItem="n4y-Dd-3OG" secondAttribute="bottom" id="zCn-QD-m7W"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xmd-WX-ENO" secondAttribute="trailing" id="HNl-GV-uu4"/>
+                <constraint firstItem="Xmd-WX-ENO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="abg-Go-1FI"/>
+                <constraint firstItem="Xmd-WX-ENO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kXg-qM-VEt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xmd-WX-ENO" secondAttribute="bottom" id="zFE-ok-tJt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="120"/>
+        </view>
+    </objects>
+</document>

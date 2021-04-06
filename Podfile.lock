@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - ESTabBarController-swift (2.8.0)
+  - FLAnimatedImage (1.0.15)
+  - ObjectMapper (3.5.3)
+  - SBCardPopup (0.3.0)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - Starscream (3.0.6)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.2)
+  - ESTabBarController-swift
+  - FLAnimatedImage (~> 1.0.12)
+  - SBCardPopup
+  - SDWebImage (~> 5.0)
+  - Starscream (~> 3.0.2)
+  - SwiftyJSON (~> 4.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - ESTabBarController-swift
+    - FLAnimatedImage
+    - ObjectMapper
+    - SBCardPopup
+    - SDWebImage
+    - Starscream
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FLAnimatedImage: dd3db277b17e909ec3c7fd41adfce79b321d960e
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SBCardPopup: 76a6ac83cbb0fde07a84df31ade1e23c62219a1c
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: a43aee443989b44d7c99e97d0d6c045ca6d7ef29
+
+COCOAPODS: 1.10.1

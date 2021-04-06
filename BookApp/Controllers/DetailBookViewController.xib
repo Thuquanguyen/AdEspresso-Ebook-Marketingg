@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailBookViewController" customModule="eBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="0Aj-8f-nGU" id="1fY-Qp-nlx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="fQJ-BP-mNE" id="nCh-fj-iip"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Aj-8f-nGU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQJ-BP-mNE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fQJ-BP-mNE" secondAttribute="bottom" id="2MW-oN-7z6"/>
+                        <constraint firstAttribute="trailing" secondItem="fQJ-BP-mNE" secondAttribute="trailing" id="BZg-4N-iLv"/>
+                        <constraint firstItem="fQJ-BP-mNE" firstAttribute="leading" secondItem="0Aj-8f-nGU" secondAttribute="leading" id="OGC-jx-Oow"/>
+                        <constraint firstItem="fQJ-BP-mNE" firstAttribute="top" secondItem="0Aj-8f-nGU" secondAttribute="top" id="tsQ-h7-FDw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Aj-8f-nGU" secondAttribute="trailing" id="IRW-EF-8UR"/>
+                <constraint firstAttribute="bottom" secondItem="0Aj-8f-nGU" secondAttribute="bottom" id="Nva-O8-jHr"/>
+                <constraint firstItem="0Aj-8f-nGU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ph2-9U-juf"/>
+                <constraint firstItem="0Aj-8f-nGU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c8O-oJ-UfL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </view>
+    </objects>
+</document>
