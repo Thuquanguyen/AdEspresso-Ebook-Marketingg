@@ -10,4 +10,6 @@ target 'BookApp' do
     pod 'Starscream', '~> 3.0.2'
     pod 'SwiftyJSON', '~> 4.1.0'
     pod 'FLAnimatedImage', '~> 1.0.12'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Database'
 end

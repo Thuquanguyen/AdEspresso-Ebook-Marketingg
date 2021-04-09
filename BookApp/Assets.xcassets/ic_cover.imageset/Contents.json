@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Digital-marketing-là-gì.png",
+      "filename" : "ic_cover.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ic_cover-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ic_cover-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -8,11 +8,15 @@
 
 import UIKit
 import ESTabBarController_swift
+import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var ref: DatabaseReference!
     static var shared = UIApplication.shared.delegate as! AppDelegate
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -28,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self?.openMainScreen()
             }
         })
-        
+        FirebaseApp.configure()
         
         return true
     }
@@ -39,9 +43,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if isCheck {
                 self?.openMainScreen()
             } else {
-                let loginVC = LoginViewController()
-                self?.window?.rootViewController = loginVC
-                self?.window?.makeKeyAndVisible()
+                self?.ref = Database.database().reference()
+                self?.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let status = snapshot.value as? Bool {
+                        if status{
+                            let loginVC = LoginViewController()
+                            self?.window?.rootViewController = loginVC
+                            self?.window?.makeKeyAndVisible()
+                        }else{
+                            self?.openMainScreen()
+                        }
+                    }
+                })
             }
         }
     }

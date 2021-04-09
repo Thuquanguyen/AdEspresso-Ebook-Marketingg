@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>449511151813-2c14dkpcq1s7k9kuvkmiadfrrfl310rn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.449511151813-2c14dkpcq1s7k9kuvkmiadfrrfl310rn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCPl0Nph30VD9BcT09ZUakD6D7IRpusi9E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>449511151813</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.namtran.ebooks</string>
+	<key>PROJECT_ID</key>
+	<string>adespresso-ebook-marketing-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>adespresso-ebook-marketing-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:449511151813:ios:10ff6aad74d2e7e10fb8ac</string>
+</dict>
+</plist>

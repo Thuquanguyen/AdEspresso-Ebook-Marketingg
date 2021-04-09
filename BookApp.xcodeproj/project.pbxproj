@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1862386A261CB5F70047EFAD /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18623869261CB5F70047EFAD /* Dictionary.swift */; };
 		1862386C261CB92E0047EFAD /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862386B261CB92E0047EFAD /* CharacterSet.swift */; };
+		245040D8261EA9FF00AF9F67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 245040D7261EA9FF00AF9F67 /* GoogleService-Info.plist */; };
 		8414A1E925E427ED0051F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414A1E725E427ED0051F7F1 /* LoginViewController.swift */; };
 		8414A1EA25E427ED0051F7F1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8414A1E825E427ED0051F7F1 /* LoginViewController.xib */; };
 		8414A1EF25E435C20051F7F1 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414A1ED25E435C20051F7F1 /* LaunchViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		18623869261CB5F70047EFAD /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		1862386B261CB92E0047EFAD /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
+		245040D7261EA9FF00AF9F67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8414A1E725E427ED0051F7F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8414A1E825E427ED0051F7F1 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8414A1ED25E435C20051F7F1 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		84F56EFD25B80BBA00EA7EE6 /* BookApp */ = {
 			isa = PBXGroup;
 			children = (
+				245040D7261EA9FF00AF9F67 /* GoogleService-Info.plist */,
 				84E350F325B85CD4000846FC /* Model */,
 				84F56F2025B8189000EA7EE6 /* Helper */,
 				84F56F1B25B8120800EA7EE6 /* Controllers */,
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245040D8261EA9FF00AF9F67 /* GoogleService-Info.plist in Resources */,
 				84F56F0B25B80BBC00EA7EE6 /* LaunchScreen.storyboard in Resources */,
 				849D652E25C1A50E009EC296 /* SearchBookViewController.xib in Resources */,
 				8460A42C25B988B60034A675 /* DetailBookViewController.xib in Resources */,
@@ -513,10 +517,11 @@
 			baseConfigurationReference = D97E44F934829ADBF06145A4 /* Pods-BookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6T942SVBY8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = CUZZ5LX8A8;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = BookApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -525,7 +530,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.namtran.ebooks-marketing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namtran.ebooks;
 				PRODUCT_NAME = "eBooks Marketing";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -538,10 +543,11 @@
 			baseConfigurationReference = E27E481001C03CEDEC968EE2 /* Pods-BookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6T942SVBY8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = CUZZ5LX8A8;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = BookApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -550,7 +556,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.namtran.ebooks-marketing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namtran.ebooks;
 				PRODUCT_NAME = "eBooks Marketing";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
