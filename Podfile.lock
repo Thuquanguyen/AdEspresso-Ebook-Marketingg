@@ -79,9 +79,9 @@ PODS:
   - ObjectMapper (3.5.3)
   - PromisesObjC (1.2.12)
   - SBCardPopup (0.3.0)
-  - SDWebImage (5.10.0):
-    - SDWebImage/Core (= 5.10.0)
-  - SDWebImage/Core (5.10.0)
+  - SDWebImage (5.11.0):
+    - SDWebImage/Core (= 5.11.0)
+  - SDWebImage/Core (5.11.0)
   - Starscream (3.0.6)
   - SwiftyJSON (4.1.0)
 
@@ -139,10 +139,10 @@ SPEC CHECKSUMS:
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SBCardPopup: 76a6ac83cbb0fde07a84df31ade1e23c62219a1c
-  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
 PODFILE CHECKSUM: f8f9420b981751a0a4dcf5ffd01af0e43863287b
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

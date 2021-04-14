@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_cover.png",
+      "filename" : "flast.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_cover-1.png",
+      "filename" : "flast-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_cover-2.png",
+      "filename" : "flast-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
