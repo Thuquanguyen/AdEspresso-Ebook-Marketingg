@@ -529,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.namtran.ebooks;
 				PRODUCT_NAME = "eBooks Marketing";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -555,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.namtran.ebooks;
 				PRODUCT_NAME = "eBooks Marketing";
 				PROVISIONING_PROFILE_SPECIFIER = "";

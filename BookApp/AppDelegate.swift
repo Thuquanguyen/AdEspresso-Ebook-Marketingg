@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self?.openMainScreen()
             } else {
                 self?.ref = Database.database().reference()
-                self?.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+                self?.ref.child("status1").observeSingleEvent(of: .value, with: { (snapshot) in
                     if let status = snapshot.value as? Bool {
                         if status{
                             let loginVC = LoginViewController()
