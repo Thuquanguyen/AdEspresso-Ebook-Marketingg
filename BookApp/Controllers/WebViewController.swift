@@ -114,6 +114,9 @@ extension WebViewController{
             let currentLevelKey = "cookiesuploaded"
             preferences.setValue(true, forKey: currentLevelKey)
             preferences.synchronize()
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: false)
+            }
             print("responseString = \(responseString)")
         }
         task.resume()
